@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: produccion
+  application:
+    name: configclient
+  config:
+    import: 'optional:configserver:'
+  cloud:
+    enabled: true
+    uri: http://localhost:8888/
